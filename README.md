@@ -34,13 +34,10 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 
 ## Screenshot
+<img width="1440" alt="Screenshot 2024-11-30 at 11 04 38 AM" src="https://github.com/user-attachments/assets/f4d4fefb-5942-46b1-aec8-1baf9a2abcd4">
+<img width="1440" alt="Screenshot 2024-11-30 at 11 04 45 AM" src="https://github.com/user-attachments/assets/67bbe718-7dad-41c3-b5e5-8531d8a9d75f">
+<img width="1440" alt="Screenshot 2024-11-30 at 11 04 56 AM" src="https://github.com/user-attachments/assets/d2063a11-030b-4d26-b64e-a02a6d3e3672">
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
 
 ## Deployed to
