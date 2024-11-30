@@ -1,0 +1,10 @@
+export const PENDING = 'pending';
+export const CONFIRMED = 'confirmed';
+export const COMPLETED = 'completed';
+export const CANCELLED = 'cancelled';
+export const ORANGE = 'orange';
+export const GREEN = 'green';
+export const GREY = 'grey';
+export const RED = 'red';
+export const JOIN_MEETING = 'join meeting';
+export const CANCEL = 'cancel';
