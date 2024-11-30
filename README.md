@@ -32,6 +32,10 @@ bun dev
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+### Testing
+
+Testing was intended to be done with Vite and React testing library. But no test file has been created. Test files and cases will be updated.
+
 
 ## Screenshot
 <img width="1440" alt="Screenshot 2024-11-30 at 11 04 38 AM" src="https://github.com/user-attachments/assets/f4d4fefb-5942-46b1-aec8-1baf9a2abcd4">
