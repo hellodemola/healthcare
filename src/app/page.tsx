@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 import { Label, Title } from './components/common/typography';
 import useModals from './hooks/useModals';
 import mockAvaliableTimeslots from './helpers/mockAvaliable';
-import { IAppointmentResp } from './interface/api.interface';
+import { IAppointmentReq } from './interface/api.interface';
 import { useBookingMutation } from './services/mutations';
 import mockAppResp from './helpers/mockAppResp';
 import Loading from './loading';
@@ -26,7 +26,7 @@ export default function Home() {
 
   const mutations = useBookingMutation();
   const handlePostBooking = async (props: StartTimeEventEmit) => {
-    const data: IAppointmentResp = mockAppResp(props.startTime);
+    const data: IAppointmentReq = mockAppResp(props.startTime, provider?.id || '');
     return mutations.mutate(data);
   };
 

@@ -1,7 +1,7 @@
 export interface IProviders {
   name: string;
   specialty: string;
-  experience: string;
+  experience?: string;
 }
 
 export interface IProviderAppointment extends IProviders {

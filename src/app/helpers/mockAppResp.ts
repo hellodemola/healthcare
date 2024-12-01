@@ -1,7 +1,7 @@
-const mockAppResp = (date: Date) => ({
+const mockAppResp = (date: Date, providerId: string) => ({
   userId: '001',
   createdAt: new Date(),
-  providerId: '0012',
+  providerId: providerId,
   appointmentDate: date,
 });
 

@@ -27,7 +27,6 @@ export default function Appointments() {
                 key={each.appointmentId}
                 name={each.name}
                 specialty={each.specialty}
-                experience="8"
                 status={each.status}
                 appointmentDate={each.appointmentDate}
                 appointmentId={each.appointmentId}
