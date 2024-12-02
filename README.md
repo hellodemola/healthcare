@@ -34,7 +34,17 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 ### Testing
 
-Testing was intended to be done with Vite and React testing library. But no test file has been created. Test files and cases will be updated.
+Testing was intended to be done with Vite and React testing library. To run test:
+
+```bash
+npm run test
+# or
+yarn test
+# or
+pnpm test
+# or
+bun test
+```
 
 ## Screenshot
 

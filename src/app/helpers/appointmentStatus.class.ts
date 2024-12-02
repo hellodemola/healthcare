@@ -21,7 +21,8 @@ export default class appointmentStatus {
 
   get updateStatus(){
     if (this.status === 'pending') return CANCELLED;
-    return COMPLETED;
+    if (this.status === 'confirmed')return COMPLETED;
+    return;
   }
 
   get isActive(): boolean {
