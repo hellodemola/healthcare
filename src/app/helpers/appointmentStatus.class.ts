@@ -19,6 +19,11 @@ export default class appointmentStatus {
     return colorCode;
   }
 
+  get updateStatus(){
+    if (this.status === 'pending') return CANCELLED;
+    return COMPLETED;
+  }
+
   get isActive(): boolean {
     if (this.status === CANCELLED || this.status === COMPLETED) return false;
     return true;

@@ -36,7 +36,9 @@ export default function Appointment(props: IAppointments) {
             </div>
 
             {currentStatus.isActive && (
-              <Button onClick={() => handleBooking(id, status)}>{currentStatus.activeLabel}</Button>
+              <Button onClick={() => handleBooking(id, currentStatus.updateStatus)}>
+                {currentStatus.activeLabel}
+              </Button>
             )}
           </div>
         </Card>

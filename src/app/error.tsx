@@ -17,18 +17,20 @@ export default function Error({
   }, [error]);
 
   return (
-    <div className="max-w-40">
-      <Label>Something went wrong!</Label>
-      <SubLabel>{error?.message}</SubLabel>
+    <div className="flex justify-center text-center">
+      <div className="max-w-md">
+        <Label>Something went wrong!</Label>
+        <SubLabel>{error?.message}</SubLabel>
 
-      <Button
-        onClick={
-          // Attempt to recover by trying to re-render the segment
-          () => reset()
-        }
-      >
-        Try again
-      </Button>
+        <Button
+          onClick={
+            // Attempt to recover by trying to re-render the segment
+            () => reset()
+          }
+        >
+          Try again
+        </Button>
+      </div>
     </div>
   );
 }
