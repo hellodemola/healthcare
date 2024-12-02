@@ -1,5 +1,5 @@
-import { TStatus } from "./appointments";
-import { IProviders } from "./providers";
+import { TStatus } from './appointments';
+import { IProviders } from './providers';
 
 export interface IAppointmentReq {
   userId: string;

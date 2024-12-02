@@ -9,17 +9,17 @@ export async function GET() {
 
 export async function POST(request: Request) {
   const req: IAppointmentReq = await request.json();
-  const { userId, appointmentDate, createdAt, providerId  } = req;
+  const { userId, appointmentDate, createdAt, providerId } = req;
   const provider = providers.find((each) => each.userId === req.providerId);
   const responseData: IAppointmentResp = {
     status: 'pending',
     appointmentId: new Date().valueOf().toString(),
     name: provider?.name || providers[0].name,
-    providerId, 
+    providerId,
     specialty: provider?.specialty || providers[0].specialty,
     userId,
     appointmentDate,
     createdAt,
-  }
-  return NextResponse.json({ data: responseData });
+  };
+  return NextResponse.json(responseData);
 }

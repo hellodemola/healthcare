@@ -1,6 +1,6 @@
 ## Introduction
 
-Repository for frontend implementation of an *Appointment Management Interface* for Patient to book appointments and maange their list of scheduled appointments; both past and upcoming.
+Repository for frontend implementation of an _Appointment Management Interface_ for Patient to book appointments and maange their list of scheduled appointments; both past and upcoming.
 
 ## Getting Started
 
@@ -36,13 +36,12 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 Testing was intended to be done with Vite and React testing library. But no test file has been created. Test files and cases will be updated.
 
-
 ## Screenshot
+
 <img width="1440" alt="Screenshot 2024-11-30 at 11 04 38 AM" src="https://github.com/user-attachments/assets/f4d4fefb-5942-46b1-aec8-1baf9a2abcd4">
 <img width="1440" alt="Screenshot 2024-11-30 at 11 04 45 AM" src="https://github.com/user-attachments/assets/67bbe718-7dad-41c3-b5e5-8531d8a9d75f">
 <img width="1440" alt="Screenshot 2024-11-30 at 11 04 56 AM" src="https://github.com/user-attachments/assets/d2063a11-030b-4d26-b64e-a02a6d3e3672">
 
-
-
 ## Deployed to
+
 [Hellodemola Plateaumed](https://plateaumed.hellodemola.com/)
