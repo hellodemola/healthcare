@@ -2,15 +2,14 @@
 import Provider from './components/cards/provider';
 import Modal from './components/common/modal';
 import { IHandleBook, IProviderAppointment } from './interface/providers';
-import { ScheduleMeeting } from 'react-schedule-meeting';
 import { useGetProviders } from './services/queries/queryProviders';
 import { useState } from 'react';
-import { Label, Title } from './components/common/typography';
+import { Title } from './components/common/typography';
 import useModals from './hooks/useModals';
-import mockAvaliableTimeslots from './helpers/mockAvaliable';
 import Loading from './loading';
 import Error from './error';
 import useBooking from './hooks/useBooking';
+import Schedule from './appointments/schdeule';
 
 export default function Home() {
   const { isLoading, data: providers, error, isError, refetch } = useGetProviders();
@@ -36,8 +35,8 @@ export default function Home() {
           <Error error={(error as Error) || mutations.error} reset={() => refetch()} />
         )}
         {isLoading && <Loading />}
-        {providers && (
-          <div className="lg:grid-cols-2 grid gap-6">
+        {providers?.length && (
+          <div data-testid="data" className="lg:grid-cols-2 grid gap-6">
             {providers.map((each: IProviderAppointment) => (
               <Provider
                 key={each.userId}
@@ -52,21 +51,6 @@ export default function Home() {
           </div>
         )}
       </main>
-      {isShowModal && (
-        <Modal setShowModal={handleModalState}>
-          <>
-            <Label>Set an appointment with {provider?.name}</Label>
-            <ScheduleMeeting
-              borderRadius={10}
-              primaryColor="#3f5b85"
-              eventDurationInMinutes={30}
-              availableTimeslots={mockAvaliableTimeslots}
-              onStartTimeSelect={handlePostBooking}
-              startTimeListStyle="scroll-list"
-            />
-          </>
-        </Modal>
-      )}
     </div>
   );
 }
