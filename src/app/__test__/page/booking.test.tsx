@@ -74,7 +74,6 @@ describe('TEST_NETWORK_ERROR', () => {
       );
     });
     await waitFor(() => {
-      screen.debug();
       expect(screen.getByText('Something went wrong!')).toBeInTheDocument();
     });
   });
