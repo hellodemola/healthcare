@@ -7,7 +7,6 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'), // Map @ to the src folder
-      'react-schedule-meeting': 'node_modules/react-schedule-meeting/dist/index.esm.js',
     },
   },
   test: {
@@ -16,4 +15,9 @@ export default defineConfig({
     setupFiles: './vitest.setup.ts', // Path to your setup file,
   },
   plugins: [tsconfigPaths(), react()],
+  resolve: {
+    alias: {
+      'react-schedule-meeting': '/node_modules/react-schedule-meeting/dist/index.esm.js', // Adjust path as needed
+    },
+  },
 });

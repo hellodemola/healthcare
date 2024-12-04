@@ -2,7 +2,7 @@ import Wrapper from '@/app/helpers/test.wrapper';
 import { createTestStore, TAppStore } from '@/app/helpers/testStore';
 import Home from '@/app/page';
 import { act, render, screen, waitFor } from '@testing-library/react';
-import { afterAll, afterEach, beforeAll, beforeEach, describe, expect, test, vi } from 'vitest';
+import { afterAll, afterEach, beforeEach, describe, expect, test, vi } from 'vitest';
 import { setupServer } from 'msw/node';
 import { failedMockProvidersApi, mockProvidersApi } from '@/app/helpers/mocks/fetch.mocks';
 
@@ -20,6 +20,7 @@ vi.mock('next/navigation', () => ({
     pathname: '/', // Mocked current route
   }),
 }));
+
 describe('SET_APPOINTMENTS', () => {
   beforeEach(() => {
     store = createTestStore();

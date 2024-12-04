@@ -51,6 +51,11 @@ export default function Home() {
           </div>
         )}
       </main>
+      {isShowModal && provider && (
+        <Modal setShowModal={handleModalState}>
+          <Schedule name={provider?.name} handlePostBooking={handlePostBooking} />
+        </Modal>
+      )}
     </div>
   );
 }
