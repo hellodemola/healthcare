@@ -35,7 +35,7 @@ export default function Home() {
           <Error error={(error as Error) || mutations.error} reset={() => refetch()} />
         )}
         {isLoading && <Loading />}
-        {providers?.length && (
+        {providers?.length > 0 && (
           <div data-testid="data" className="lg:grid-cols-2 grid gap-6">
             {providers.map((each: IProviderAppointment) => (
               <Provider
