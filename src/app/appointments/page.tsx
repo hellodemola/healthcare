@@ -12,9 +12,7 @@ import Button from '../components/common/button';
 import toast from 'react-hot-toast';
 
 export default function Appointments() {
-  const {
-    appointment: { appointments },
-  } = useSelector((state: RootState) => state);
+  const { appointments } = useSelector((state: RootState) => state.appointment);
 
   const dispatch = useDispatch();
 
